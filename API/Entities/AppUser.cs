@@ -9,6 +9,7 @@ namespace API.Entities
     {
         public int Id { get; set; } // Id koy entity bunun primary key olduğunu çakar
         public string UserName { get; set; } //bu da convention Username yazsaydık iki saat refactor edecektik
-        
+        public byte [] PasswordHash { get; set; }
+        public byte [] PasswordSalt { get; set; }
     }
 }

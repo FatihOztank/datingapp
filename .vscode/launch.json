@@ -6,7 +6,7 @@
             // Use hover for the description of the existing attributes
             // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
             "name": ".NET Core Launch (web)",
-            "type": "coreclr",
+            "type": "mono",
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
@@ -28,8 +28,9 @@
         },
         {
             "name": ".NET Core Attach",
-            "type": "coreclr",
-            "request": "attach"
+            "type": "mono",
+            "request": "attach",
+            "port": 5001
         }
     ]
 }
